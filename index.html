@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Somani Music</title>
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Electrolize&family=Montserrat+Alternates&family=Orbitron&family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/customStyles.css">
+</head>
+<body id="backgroundSlides">
+  
+  <!-- HEAD START-->
+  <div class="container header  flexCenter">
+    <img src="images/sign.gif" height="100%" alt="">
+  </div>
+  <!-- HEAD END -->
+
+  <!-- TABS START -->
+  <div class="container-fluid">
+    <div class="row d-flex justify-content-center align-items-center ">
+      <div class="col-xs-8 col-md-11  col-lg-8   height100   d-flex flex-column justify-content-center align-items-center">
+        <div class="container tabContainer ">
+          <div class="row height100 width100 d-flex justify-content-center buttonContainer">
+            <button class="navbut width25"  onclick="showPanel(0,' rgba(214, 214, 208, .3)')">HOME</button>
+            <button class="navbut width25"  onclick="showPanel(1,' rgba(214, 214, 208, .3)')">SONGS</button>
+            <button class="navbut width35"  onclick="showPanel(2,' rgba(214, 214, 208, .3)')">ABOUT ME</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- TABS END -->
+  
+  <!-- MAIN START -->
+
+      <!-- HOME START-->
+  <div class="container-fluid main tabpanels">
+    <div class="row height100  d-flex justify-content-center align-items-center ">
+      <div class="col-xs-8 col-md-11  col-lg-8   height100  home d-flex flex-column justify-content-center align-items-center ">
+        <!-- heading START -->
+        <div class="row latest d-flex justify-content-center align-items-center ">
+            <h5 class="textCenter headingLatest ">Latest by Somani</h5>
+            <!-- <h5 class="textCenter headingLatest headingType2">Latest by somani</h5>
+            <h6 class="textCenter headingLatest headingType3">Latest by somani</h6> -->
+        </div>
+        <!-- heading END -->
+
+        <!-- yotube link START -->
+        <div class="row youtube d-flex justify-content-center align-items-center ">
+            <iframe   src="https://www.youtube.com/embed/0bMCJQeEK5U"></iframe >
+        </div>
+        <!-- yoututbe link END -->
+
+        <!-- other links START -->
+        <div class="row stores width100 d-flex justify-content-around mt-3" >
+          <div class="col d-flex justify-content-center align-items-center">
+            <a  href="https://open.spotify.com/album/0FsNWcyy4jDJdRYjQenONI?si=yop_Of8rSJKCeEZC0YQemw" target="_blank"><img class="zoom" src="images/spotify-brands.svg" alt="" ></a>
+          </div>
+          <div class="col d-flex justify-content-center align-items-center">
+            <a  href="https://music.apple.com/us/album/still-the-same-single/1514589665?uo=4" target="_blank"> <img class="zoom" src="images/itunes-brands.svg" alt="" > </a>
+          </div>
+          <div class="col d-flex justify-content-center align-items-center">
+            <a  href="https://distrokid.com/hyperfollow/somani/still-the-same" class="other" target="_blank">Listen on Other Stores</a>
+          </div>
+        </div>
+        <!-- other links END -->
+      </div>
+    </div>
+  </div>
+  <!-- HOME END-->
+
+  <!-- SONGS START -->
+  <!-- song1 START -->
+  <div class="container-fluid main tabpanels">
+    <div class="row height100   d-flex justify-content-center align-items-center">
+      <div class="col-xs-8 col-md-11  col-lg-8 width100   height100  songs  ">
+         <!-- song1 START -->
+        
+        <div class="d-flex flex-column justify-content-around  align-items-center my-4">
+          <div class="d-flex flex-column align-items-center justify-content-center mt-3">
+            <img class="albumArt my-1" src="images/generic.jpg"  alt="">
+            <h6 class="textCenter m-1 songName">Generic</h6>
+          </div>
+          <div class="row stores width100 d-flex justify-content-around mx-2"> 
+            <a  href="https://www.youtube.com/watch?v=Z4KVMXKz5sY&ab_channel=SomaniMusic" target="_blank"><img class="icons" src="images/youtube-brands.svg" alt="" ></a>
+            <a  href="https://open.spotify.com/album/0D5TelzbfY8he6PtXV1tMo" target="_blank"><img class="icons" src="images/spotify-brands.svg" alt="" ></a>
+            <a  href="https://music.apple.com/us/album/generic-single/1507216579?uo=4" target="_blank" > <img class="icons" src="images/itunes-brands.svg" alt="" > </a>
+            <a  href="https://distrokid.com/hyperfollow/somani/generic-2" target="_blank" class="iconOther">Other Stores</a>
+          </div>
+        </div>
+        <!-- song1 END -->
+        <div class="line"></div>
+        <!-- song2 START -->
+        <div class="d-flex flex-column justify-content-around  align-items-center my-4">
+          <div class="d-flex flex-column align-items-center justify-content-center mt-3">
+              <img class="albumArt my-1" src="images/nakse.jpg" alt="">
+              <h6 class="textCenter m-1 songName">Nakse</h6>
+          </div>
+          <div class="row stores width100 d-flex justify-content-around mx-2"> 
+            <a  href="https://www.youtube.com/watch?v=GARQ93YXP9A&feature=youtu.be" target="_blank"><img class="icons" src="images/youtube-brands.svg" alt="" ></a>
+            <a  href="https://open.spotify.com/album/1u17dmbLXN2OqrzT8qsuUA" target="_blank"><img class="icons" src="images/spotify-brands.svg" alt="" ></a>
+            <a  href="https://music.apple.com/us/album/nakse-single/1506495542?uo=4" target="_blank"> <img class="icons" src="images/itunes-brands.svg" alt="" > </a>
+            <a  href="https://distrokid.com/hyperfollow/somani/nakse" target="_blank" class="iconOther">Other Stores</a>
+          </div>
+        </div>
+        <!-- song2 END -->
+        <div class="line"></div>
+        <!-- song3 START -->
+        <div class="d-flex flex-column justify-content-around  align-items-center my-4">
+          <div class="d-flex flex-column align-items-center justify-content-center mt-3">
+              <img class="albumArt my-1" src="images/dmp.jpg" alt="">
+              <h6 class="textCenter m-1 songName">DMP</h6>
+          </div>
+          <div class="row stores width100 d-flex justify-content-around mx-2"> 
+            <a  href="https://www.youtube.com/watch?v=ytX4pKzq39g&feature=youtu.be" target="_blank"><img class="icons" src="images/youtube-brands.svg" alt="" ></a>
+            <a  href="https://open.spotify.com/album/1OUi87Vi7dZvjDLzyNEeJY" target="_blank"><img class="icons" src="images/spotify-brands.svg" alt="" ></a>
+            <a  href="https://music.apple.com/us/album/drugs-money-power-single/1507255538?uo=4" target="_blank"> <img class="icons" src="images/itunes-brands.svg" alt="" > </a>
+            <a  href="https://distrokid.com/hyperfollow/somani/drugs-money-power" target="_blank" class="iconOther">Other Stores</a>
+          </div>
+        </div>
+        <!-- song3 END -->
+        <div class="line"></div>
+        <!-- song6 START -->
+        <div class="d-flex flex-column justify-content-around  align-items-center my-4">
+          <div class="d-flex flex-column align-items-center justify-content-center mt-3">
+              <img class="albumArt my-1" src="images/459.jpg" alt="">
+              <h6 class="m-1 textCenter songName">459</h6>
+          </div>
+          <div class="row stores width100 d-flex justify-content-around mx-2"> 
+            <a  href="https://www.youtube.com/watch?v=XYlHCyoQuLU&feature=youtu.be" target="_blank"><img class="icons" src="images/youtube-brands.svg" alt="" ></a>
+            <a  href="https://open.spotify.com/album/0R8CypLSouhzrS9A1bwCIv" target="_blank"><img class="icons" src="images/spotify-brands.svg" alt="" ></a>
+            <a  href="https://music.apple.com/us/album/459-single/1507358032?uo=4" target="_blank"> <img class="icons" src="images/itunes-brands.svg" alt="" > </a>
+            <a  href="https://distrokid.com/hyperfollow/somani/459" target="_blank" class="iconOther">Other Stores</a>
+          </div>
+        </div>
+        <!-- song6 END -->
+        <div class="line"></div>
+        <!-- song4 START -->
+        <div class="d-flex flex-column justify-content-around  align-items-center my-4">
+          <div class="d-flex flex-column align-items-center justify-content-center mt-3">
+              <img class="albumArt my-1" src="images/bnw.jpg" alt="">
+              <h6 class="textCenter m-1 songName">Black / White</h6>
+          </div>
+          <div class="row stores width100 d-flex justify-content-around mx-2"> 
+            <a  href="https://www.youtube.com/watch?v=SUjNsqYNsz0&feature=youtu.be&ab_channel=SomaniMusic" target="_blank"><img class="icons" src="images/youtube-brands.svg" alt="" ></a>
+            <a  href="https://open.spotify.com/album/36dpl680P5fbzbDE1udPid?si=bquyPQbnTwuCZDpL2kM5Ag" target="_blank"><img class="icons" src="images/spotify-brands.svg" alt="" ></a>
+            <a  href="https://music.apple.com/us/album/black-and-white-single/1510063168" target="_blank"> <img class="icons" src="images/itunes-brands.svg" alt="" > </a>
+            <a  href="https://distrokid.com/hyperfollow/somani/black-and-white" target="_blank" class="iconOther">Other Stores</a>
+          </div>
+        </div>
+        <!-- song4 END -->
+        <div class="line"></div>
+        <!-- song5 START -->
+        <div class="d-flex flex-column justify-content-around  align-items-center my-4">
+          <div class="d-flex flex-column align-items-center justify-content-center mt-3">
+              <img class="albumArt my-1" src="images/social.jpg" alt="">
+              <h6 class="m-1 textCenter songName">Social Media</h6>
+          </div>
+          <div class="row stores width100 d-flex justify-content-around mx-2"> 
+            <a  href="https://www.youtube.com/watch?v=MsGU2M9CnI8&feature=youtu.be" target="_blank"><img class="icons" src="images/youtube-brands.svg" alt="" ></a>
+            <a  href="https://open.spotify.com/album/7ux8fcu8eUophxy996iHjH" target="_blank"><img class="icons" src="images/spotify-brands.svg" alt="" ></a>
+            <a  href="https://music.apple.com/us/album/social-media-single/1512307037?uo=4" target="_blank"> <img class="icons" src="images/itunes-brands.svg" alt="" > </a>
+            <a  href="https://distrokid.com/hyperfollow/somani/social-media" target="_blank" class="iconOther">Other Stores</a>
+          </div>
+        </div>
+        <!-- song5 END -->
+        <div class="line"></div>
+        
+        <!-- song7 START -->
+        <div class="d-flex flex-column justify-content-around  align-items-center my-4">
+          <div class="d-flex flex-column align-items-center justify-content-center mt-3">
+              <img class="albumArt my-1" src="images/fs.jpg" alt="">
+              <h6 class="m-1 textCenter songName">Father's Shoes</h6>
+          </div>
+          <div class="row stores width100 d-flex justify-content-around mx-2"> 
+            <a  href="https://www.youtube.com/watch?v=IJfqVmAYiQg&feature=youtu.be" target="_blank"><img class="icons" src="images/youtube-brands.svg" alt="" ></a>
+            <a  href="https://open.spotify.com/album/7sVWmcY7gG9kFlCJN4PBdM?si=QnVE_ydyS5uVygZv8mnCKw" target="_blank"><img class="icons" src="images/spotify-brands.svg" alt="" ></a>
+            <a  href="https://music.apple.com/us/album/fathers-shoes-single/1509363460?uo=4&app=music&at=1001lry3&ct=dashboard" target="_blank"> <img class="icons" src="images/itunes-brands.svg" alt="" > </a>
+            <a  href="https://distrokid.com/hyperfollow/somani/fathers-shoes-3" target="_blank" class="iconOther">Other Stores</a>
+          </div>
+        </div>
+        <!-- song7 END -->
+      </div>
+    </div>
+  </div>
+  <!-- SONGS END -->
+
+  <!-- ABOUTME START -->
+  <div class="container-fluid main tabpanels">
+    <div class="row height100  d-flex justify-content-center align-items-center ">
+      <div class="col-xs-8 col-md-11  col-lg-8   height100 home  d-flex  justify-content-center align-items-center ">
+        <!-- heading START -->
+        <div class="tut d-flex height100   justify-content-center align-items-center p-2 ml-3">
+          <p class="tat mx-3   textCenter">
+            Rapper, Producer, and Engineer from Haridwar, Uttarakhand. Born and brought up in this small city, my childhood was mostly peaceful. I was just another kid, big blurry dreams of who I’ll grow up to be, and I guess music just caught my eyes. Then I found rap. Gotta say, rap is one good way to get your thoughts out. Came to Chennai in 2016 to pursue B.Tech from SRM Chennai, where I met Noodl(Kshitij), and made our first song, Running the game, which was just a start to number of projects we have worked on together. In 2019, I got a chance to take part in REDBULL’s Spotlight, and won Chennai Spotlight, booking a place in final 10, which I can say was an amazing journey to learn from. Hope you all enjoy my music, and I’ll keep dropping bangers.               
+          </p>
+        </div>
+        
+        <!-- other links END -->
+      </div>
+    </div>
+  </div>
+  <!-- ABOUTME END -->
+  
+  <!-- MAIN END -->
+
+  <!-- FOOTER START -->
+  <div class="container-fluid footer flexCenter mt-1  ">
+    
+        <a class="mr-2 socialLinks" href="https://www.instagram.com/somanimusic/" target="_blank"><img class="socials" src="images/instagram.svg" width="30rem" alt="insta"></a>
+        <img src="images/logo.gif" width="50rem" alt="">
+        <a class="ml-2 socialLinks" href="https://www.linkedin.com/in/vaibhav-somani/" target="_blank"><img class="socials" src="images/linkedin.svg" width="30rem" alt=""></a>
+      
+  </div>
+  <!-- FOOTER END -->
+
+  <script src="js/customScript.js"></script> 
+</body>
+</html>

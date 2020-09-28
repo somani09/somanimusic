@@ -1,0 +1,407 @@
+
+/*---------- h1 mediaQ END----------*/
+
+/*---------- reboots START----------*/
+.remargins{
+  margin: 0 0;
+}
+/*---------- reboots START----------*/
+
+
+/*---------- custom heights START ----------*/
+.height100{
+  height:100%;
+}
+
+.width100{
+  width: 100%;
+}
+
+.width35{
+  width: 35%;
+}
+
+.width25{
+  width: 25%;
+}
+/*---------- custom heights END ----------*/
+
+/*---------- centered START----------*/
+.flexCenter{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.textCenter{
+  text-align: center;
+}
+/*---------- centered END ----------*/
+
+/*---------- body START----------*/
+#backgroundSlides{
+  animation: slideshow2 12s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+  animation-direction: alternate;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+}
+
+@media screen and (min-width: 768px){
+  #backgroundSlides{
+  animation: slideshow1 12s ;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+
+  }
+}
+
+@keyframes slideshow1 {
+  0% {
+      background-image: url("../images/desktop/red1.jpg");
+  }
+  25%{
+      background-image: url("../images/desktop/blue1.jpg");
+  }
+  50% {
+
+      background-image: url("../images/desktop/red2.jpg");
+  }
+  75%{
+      background-image: url("../images/desktop/blue2.jpg");
+  }
+
+  100%{
+    background-image: url("../images/desktop/red1.jpg");
+  }
+}
+
+@keyframes slideshow2 {
+  0% {
+      background-image: url("../images/mobile/red1.jpg");
+  }
+  25%{
+      background-image: url("../images/mobile/blue1.jpg");
+  }
+  50% {
+
+      background-image: url("../images/mobile/red2.jpg");
+  }
+  75%{
+      background-image: url("../images/mobile/blue2.jpg");
+  }
+
+  100%{
+    background-image: url("../images/mobile/red1.jpg");
+  }
+}
+/*---------- body END----------*/
+
+/*---------- head START----------*/
+.header{
+  height:15%;
+}
+
+/*---------- head END----------*/
+
+/*----------- Tabs START -----------*/
+.tabContainer{
+  height:5%;
+}
+
+.buttonContainer button{
+  /* width: 25%; */
+  height: 100%;
+  padding: 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: rgba(214, 214, 208, .5);
+}
+
+.tabsContainer button:hover{
+  background-color: rgba(214, 214, 208, .9);
+}
+
+.navbut{
+  font-size:10px;
+  font-family: 'Montserrat Alternates', sans-serif;
+  /* letter-spacing: -2px; */
+  font-weight: bold;
+  transition: 0.5s all;
+}
+
+.navbut:hover{
+  color:white;
+  background-color: rgba(71, 71, 71,.5);
+}
+
+@media screen and (min-width:370px)
+{
+  .navbut{
+      font-size: 16px;
+      /* letter-spacing: -2px; */
+      /* letter-spacing: normal; */
+  }
+}
+
+
+@media screen and (min-width:455px)
+{
+  .navbut{
+      font-size: 20px;
+      /* letter-spacing: -2px; */
+      /* letter-spacing: normal; */
+  }
+}
+
+/*----------- Tabs END -----------*/
+
+
+/*---------- main START----------*/
+.main{
+  height:75%;
+  
+}
+
+/*---------- home START ----------*/
+.home{
+  background-color: rgba(214, 214, 208, .3);
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.latest{
+  height:20%;
+}
+
+.headingLatest{
+  display: block;
+  color: rgb(182, 175, 165);
+  border-radius: 10px;
+  background-color: rgba(16, 13, 28,1);
+  padding: 10px;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+}
+
+.youtube{
+  width: 100%;
+  height:60%;
+}
+
+.youtube iframe{
+  width: 100%;
+  height: 100%;
+}
+
+/* .stores{
+  
+} */
+
+.zoom{
+  width: 4rem;
+}
+
+.other{
+  text-decoration: none;
+  padding: 1rem;
+  background-color: rgba(88, 2, 125, .5);
+  align-self: center;
+  border-radius: 1em;
+  border-style: solid;
+  border-color: rgba(45, 0, 64,1);
+  color: white;
+  transition: 0.5s all;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+
+}
+
+.other:hover{
+  text-decoration: none;
+  background-color: rgba(130, 9, 0,.5);
+  color:rgb(26, 0, 37);
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+}
+
+/*---------- home END ----------*/
+
+/*---------- songs START ----------*/
+.songName{
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+  /* width: 50%; */
+  font-size: 1rem;
+  padding: 10px;
+  background-color: rgba(214, 214, 208, .7);
+  border-radius: 10px;
+}
+.line{
+  width: 100%;
+  height: 2px;
+  background-color: gray;
+}
+.songs{
+  background-color: rgba(214, 214, 208, .3);
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar{
+  width:9px;
+}
+
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(transparent, rgba(60, 4, 120,1));
+  border-radius: 6px;
+  transition: all 1s ease-in-out; 
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background: linear-gradient(transparent, rgba(90, 0, 23,1));
+ 
+}
+/* ::-webkit-scrollbar-track{} */
+
+/* .songList{
+    
+} */
+.albumArt{
+  width: 6rem;
+  height: 6 rem;
+}
+
+.icons{
+  
+  width: 2rem;
+
+}
+
+
+
+.iconOther{
+  font-size: 10px;
+  text-decoration: none;
+  padding: .2rem;
+  background-color: rgba(88, 2, 125, .5);
+  align-self: center;
+  border-radius: 1em;
+  border-style: solid;
+  border-color: rgba(45, 0, 64,1);
+  color: white;
+  transition: 0.5s all;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+
+
+}
+
+.iconOther:hover{
+  text-decoration: none;
+  background-color: rgba(130, 9, 0,.5);
+  color:rgb(26, 0, 37);
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+
+}
+
+
+@media screen and (min-width:768px)
+{
+
+  .albumArt{
+    width: 6rem;
+   height: 6rem;
+  }
+  .icons{
+    width: 3rem;
+  }
+  .iconOther{
+    font-size: 20px;
+    padding: .5rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+
+  }
+}
+@media screen and (min-width:992px)
+{
+  .albumArt{
+    width: 8rem;
+   height: 8rem;
+  }
+  .icons{
+    width: 5rem;
+    transition: all .5s;}
+  
+  .iconOther{
+    font-size: 20px;
+    padding: .5rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+  }
+}
+
+
+/*---------- songs END ----------*/
+
+
+/*---------- aboutMe START ----------*/
+
+p{
+  /* display: inline; */
+  /* height: auto; */
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: normal;
+  color: white;
+  background-color: rgba(58, 58, 58, 0.9);
+  padding: 30px;
+  font-size: 30px;
+  /* position: absolute; */
+  border-radius: 50px;
+  
+}
+
+.tut{
+  /* position: static; */
+  overflow: hidden;
+  overflow-y: scroll;
+  /* background-color: rgba(58, 58, 58, 0.9);
+  padding: 20px; */
+}
+
+.tat{
+  position: absolute;
+  top: 20%;
+}
+/*---------- aboutMe END ----------*/
+
+.tabpanels{
+  display: none;
+}
+/*---------- main END----------*/
+
+/*---------- footer START ----------*/
+.footer{
+  height:5%;
+}
+
+.gif{
+  width: 30rem;
+  height: 30rem;
+  background-image: url(images/logogif.gif);
+  
+}
+
+
+/*---------- footer END ----------*/
+
+/*----------  mediaQ START----------*/
+
+/*---------- mediaQ END ----------*/
