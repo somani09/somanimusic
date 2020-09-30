@@ -205,6 +205,11 @@
 
 .zoom{
   width: 4rem;
+  transition: all .5s;
+}
+
+.zoom:hover{
+  transform: rotate(30deg);
 }
 
 .other{
@@ -278,12 +283,13 @@
 }
 
 .icons{
-  
   width: 2rem;
-
+  transition: all .5s;
 }
 
-
+.icons:hover{
+  transform: rotate(30deg);
+}
 
 .iconOther{
   font-size: 10px;
