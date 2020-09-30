@@ -205,11 +205,11 @@
 
 .zoom{
   width: 4rem;
-  transition: all .5s;
+  transition: all .5s ease;
 }
 
 .zoom:hover{
-  transform: rotate(30deg);
+  transform: rotate(360deg);
 }
 
 .other{
@@ -284,11 +284,11 @@
 
 .icons{
   width: 2rem;
-  transition: all .5s;
+  transition: all .5s ease;
 }
 
 .icons:hover{
-  transform: rotate(30deg);
+  transform: rotate(360deg);
 }
 
 .iconOther{
